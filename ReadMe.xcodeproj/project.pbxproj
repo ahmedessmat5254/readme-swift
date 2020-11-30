@@ -10,6 +10,8 @@
 		434DE1092573C9FE009C7AD6 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE1082573C9FE009C7AD6 /* Library.swift */; };
 		434DE1102573CB90009C7AD6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE10F2573CB90009C7AD6 /* DetailView.swift */; };
 		434DE11B2573D6D5009C7AD6 /* PHPickerViewController.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434DE11A2573D6D5009C7AD6 /* PHPickerViewController.View.swift */; };
+		436CD6F725759DEE00D477F1 /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD6F625759DEE00D477F1 /* NewBookView.swift */; };
+		436CD6FA25759F2F00D477F1 /* ReviewAndImageStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436CD6F925759F2F00D477F1 /* ReviewAndImageStack.swift */; };
 		439CC189256EFC7B00079CBC /* ReadMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC188256EFC7B00079CBC /* ReadMeApp.swift */; };
 		439CC18B256EFC7B00079CBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439CC18A256EFC7B00079CBC /* ContentView.swift */; };
 		439CC18D256EFC7C00079CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439CC18C256EFC7C00079CBC /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 		434DE1082573C9FE009C7AD6 /* Library.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Library.swift; path = "../../video-yssa-materials/05-lists/Starter/ReadMe/ReadMe/Library.swift"; sourceTree = "<group>"; };
 		434DE10F2573CB90009C7AD6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		434DE11A2573D6D5009C7AD6 /* PHPickerViewController.View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PHPickerViewController.View.swift; path = "../../../video-yssa-materials/10-modal-views/Final/ReadMe/ReadMe/Views/PHPickerViewController.View.swift"; sourceTree = "<group>"; };
+		436CD6F625759DEE00D477F1 /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
+		436CD6F925759F2F00D477F1 /* ReviewAndImageStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAndImageStack.swift; sourceTree = "<group>"; };
 		439CC185256EFC7B00079CBC /* ReadMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		439CC188256EFC7B00079CBC /* ReadMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMeApp.swift; sourceTree = "<group>"; };
 		439CC18A256EFC7B00079CBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,8 +90,10 @@
 			children = (
 				434DE11A2573D6D5009C7AD6 /* PHPickerViewController.View.swift */,
 				439CC18A256EFC7B00079CBC /* ContentView.swift */,
+				436CD6F925759F2F00D477F1 /* ReviewAndImageStack.swift */,
 				439CC19D256EFE1F00079CBC /* BookViews.swift */,
 				434DE10F2573CB90009C7AD6 /* DetailView.swift */,
+				436CD6F625759DEE00D477F1 /* NewBookView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 				434DE1102573CB90009C7AD6 /* DetailView.swift in Sources */,
 				439CC189256EFC7B00079CBC /* ReadMeApp.swift in Sources */,
 				434DE1092573C9FE009C7AD6 /* Library.swift in Sources */,
+				436CD6F725759DEE00D477F1 /* NewBookView.swift in Sources */,
 				434DE11B2573D6D5009C7AD6 /* PHPickerViewController.View.swift in Sources */,
 				439CC199256EFD8500079CBC /* Book.swift in Sources */,
+				436CD6FA25759F2F00D477F1 /* ReviewAndImageStack.swift in Sources */,
 				439CC19E256EFE1F00079CBC /* BookViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

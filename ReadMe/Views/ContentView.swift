@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var library = Library()
     var body: some View {
         NavigationView {
-            List(library.sortedBooks, id:  \.self) { book in
+            List(library.sortedBooks) { book in
                 BookRow(
                     book: book,
                     image: $library.uiImage[book]
@@ -23,7 +23,7 @@ struct ContentView: View {
 }
 
 struct BookRow: View {
-    let book: Book
+    @ObservedObject var book: Book
     @Binding var image: UIImage?
     
     var body: some View {
@@ -38,14 +38,27 @@ struct BookRow: View {
                     cornerRadius: 12
                 )
                 
-                TitleAndAuthorStack(
-                    book: book,
-                    titleFont: .title2,
-                    authorFont: .title3
-                )
+                VStack(alignment: .leading) {
+                    TitleAndAuthorStack(
+                        book: book,
+                        titleFont: .title2,
+                        authorFont: .title3
+                    )
+                    if !book.microReview.isEmpty {
+                        Spacer()
+                        Text(book.microReview)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                }
                 .lineLimit(1)
-                .padding(.vertical, 8)
+                
+                Spacer()
+                
+                BookmarkButton(book: book)
+                    .buttonStyle(BorderlessButtonStyle())
             }
+            .padding(.vertical, 8)
         }
     }
 }

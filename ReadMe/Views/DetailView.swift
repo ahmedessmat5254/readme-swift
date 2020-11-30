@@ -12,6 +12,7 @@ struct DetailView: View {
     let book: Book
     @Binding var image: UIImage?
     @State var showingImagePicker = false
+    @State var showingDeleteAlert = false
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -28,15 +29,40 @@ struct DetailView: View {
                 )
                 .scaledToFit()
                 
-                Button("Update Image...") {
-                    showingImagePicker = true
+                let updateButton =
+                    Button("Update Image") {
+                        showingImagePicker = true
+                    }
+                    .padding()
+                
+                if image != nil {
+                    HStack {
+                        Spacer()
+                        Button("Delete Image") {
+                            showingDeleteAlert = true
+                        }
+                        Spacer()
+                        updateButton
+                        Spacer()
+                    }
+                } else {
+                    updateButton
                 }
-                .padding()            }
+            }
             Spacer()
         }
         .padding()
         .sheet(isPresented: $showingImagePicker) {
             PHPickerViewController.View(image: $image)
+        }
+        .alert(isPresented: $showingDeleteAlert) {
+            .init(
+                title: .init("Delete imige from \(book.title)?"),
+                primaryButton: Alert.Button.destructive(.init("Delete")) {
+                    image = nil
+                },
+                secondaryButton: Alert.Button.cancel()
+            )
         }
     }
 }

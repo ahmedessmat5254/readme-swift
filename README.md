@@ -7,3 +7,8 @@ I learned a ton from it! The final result is this app where you can manage a col
 - Manually sort books.
 
 The app supports light and dark mode. 
+![Light and dark mode](/Resources/1.png)
+![Sections](/Resources/2.png)
+![Editing](/Resources/3.png)
+![Book Details](/Resources/4.png)
+![Adding a Book](/Resources/5.png)
